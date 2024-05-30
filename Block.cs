@@ -25,7 +25,6 @@ namespace Tetris
         {
             foreach (Position p in Tiles[rotationState])
             {
-                //megnézni mi az a yield
                 yield return new Position(p.Row + offset.Row, p.Column + offset.Column);
             }
         }
